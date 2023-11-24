@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Library Management System</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<header class="header">
+	 
+	<nav class="navbar">
+   			<a href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+   			<a href="BookCat.html">Categories</a>
+   			<a href="crat.html">Cart</a>
+   			<a href="contact.html">Contact Us</a>
+	</nav>
+</header>
+	<body>
+		<div class="w3-content w3-section" style="max-width:">
+			<img class="mySlides" src=" https://img.freepik.com/free-photo/ancient-books-adorn-library-carefully-arranged-with-classics-rare-gems_157027-2332.jpg" style="width:100%">
+			<img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Statsbiblioteket_l%C3%A6sesalen-2.jpg" style="width:100%">
+			<img class="mySlides" src=" https://media.cntraveler.com/photos/5e73a851a32d290008f50901/1:1/w_1666,h_1666,c_limit/Tianjin%20Binhai%20Library%20cr%20Ossip%20van%20Duivenbode.jpg" style="width:100%">
+			
+
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+ 
+		  </div>
+		  
+		  <script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+			
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			
+			</script>
+			
+   <script src="script.js"></script>
+   <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright 2023</div>
+</body>
+</html>
